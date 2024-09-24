@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- App Logo and Name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start">
+
+        <!-- App Logo -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/stopwatch"
+         /> <!-- Add a description for accessibility -->
+
+        <!-- App Name -->
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StopWatch"
+        android:textSize="40sp"
+        android:textColor="#6750A3"
+            android:textStyle="bold"
+
+        android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Display for the Stopwatch -->
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:textSize="48sp"
+        android:text="00:00:00"
+        android:textColor="#000"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Start Button -->
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:layout_marginTop="16dp"
+        android:onClick="onStartClicked"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_button"
+        />
+
+    <!-- Stop Button -->
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:layout_marginTop="16dp"
+        android:onClick="onStopClicked"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_button"/>
+
+    <!-- Hold Button -->
+    <Button
+        android:id="@+id/btnHold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hold"
+        android:layout_marginTop="16dp"
+        android:onClick="onHoldClicked"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_button"
+        />
+
+</LinearLayout>
